@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { IoIosFingerPrint } from "react-icons/io";
+import { MdFileCopy } from "react-icons/md";
 import {
   Field,
   FieldContent,
@@ -23,31 +23,30 @@ import {
 } from "@/components/ui/card";
 export default function LogisticsStatusSection() {
   return (
-    <Card className="w-full my-4">
-      <CardHeader>
-        <CardTitle className="font-bold flex items-center gap-2">
-          {" "}
-          <IoIosFingerPrint /> AIRCRAFT IDENTITY
+    <Card className="w-full my-4 mt-10 !py-0 !gap-0">
+      <CardHeader className="bg-blue-50 px-4 py-4">
+        <CardTitle className="font-bold flex items-center gap-2 text-2xl">
+          <MdFileCopy />AIRCRAFT IDENTITY
         </CardTitle>
       </CardHeader>
       <CardFooter>
         <div className="w-full">
           <CardContent className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
             <Field>
-              <FieldLabel htmlFor="checkout-7j9-cvv">Airplane Name</FieldLabel>
-              <Input placeholder="123" required className="w-full" />
+                <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
+              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-              <FieldLabel htmlFor="checkout-7j9-cvv">MANUFACTURER *</FieldLabel>
-              <Input placeholder="123" required className="w-full" />
+              <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
+              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-              <FieldLabel htmlFor="checkout-7j9-cvv">MODEL NUMBER *</FieldLabel>
-              <Input placeholder="123" required className="w-full" />
+                <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
+              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-              <FieldLabel htmlFor="checkout-7j9-cvv">REGISTRATION NUMBER *</FieldLabel>
-              <Input placeholder="123" required className="w-full" />
+           <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
+              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
             </Field>
           </CardContent>
         </div>
