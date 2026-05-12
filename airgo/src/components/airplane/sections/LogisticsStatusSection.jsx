@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/card";
 export default function LogisticsStatusSection() {
   return (
-    <Card className="w-full m-10">
+    <Card className="w-full my-4">
       <CardHeader>
         <CardTitle className="font-bold flex items-center gap-2">
           {" "}
@@ -31,25 +31,23 @@ export default function LogisticsStatusSection() {
         </CardTitle>
       </CardHeader>
       <CardFooter>
-        <div>
-          <CardContent className='flex gap-5'>
+        <div className="w-full">
+          <CardContent className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
             <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">Airplane Name</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
-
-             <Field>
+            <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">MANUFACTURER *</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
             <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">MODEL NUMBER *</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
-
-             <Field>
+            <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">REGISTRATION NUMBER *</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
           </CardContent>
         </div>

@@ -23,32 +23,30 @@ import {
 } from "@/components/ui/card";
 export default function PerformanceSection() {
   return (
-    <Card className="w-200 m-10 border-blue-900 border-2 h-80">
+    <Card className="w-full my-4 border-blue-900 border-2">
       <CardHeader>
-        <CardTitle className="font-bold flex items-center gap-2 ">
+        <CardTitle className="font-bold flex items-center gap-2">
           <IoIosFingerPrint /> AIRCRAFT IDENTITY
         </CardTitle>
       </CardHeader>
-      <CardFooter className=' border-blue-900 '>
-        <div>
-          <CardContent className='flex gap-5'>
+      <CardFooter className='border-blue-900'>
+        <div className="w-full">
+          <CardContent className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
             <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">Airplane Name</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
-
-             <Field>
+            <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">MANUFACTURER *</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
             <Field>
               <FieldLabel htmlFor="checkout-7j9-cvv">MODEL NUMBER *</FieldLabel>
-              <Input placeholder="123" required className="w-60" />
+              <Input placeholder="123" required className="w-full" />
             </Field>
-          
           </CardContent>
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2xb1jfXOhTxAAgNus5rK6HD90kqIJv8d5Q&s" alt="aircraft" className="w-full h-40 bg-cover" />
+          <div className="px-6 pb-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2xb1jfXOhTxAAgNus5rK6HD90kqIJv8d5Q&s" alt="aircraft" className="w-full h-40 object-cover rounded" />
           </div>
         </div>
       </CardFooter>
