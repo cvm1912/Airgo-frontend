@@ -1,7 +1,11 @@
 import AirCraftIdentity from "./sections/AircraftIdentitySection";
 import { Button } from "@/components/ui/button"
+import SeatCapacity from "./sections/SeatingCapacitySection";
+import PerformanceSection from "./sections/PerformanceSection";
+import LogisticsStatusSection from "./sections/LogisticsStatusSection";
 export default function CreateAirplaneForm() {
   return (
+    <div>
     <div className="flex flex-col gap-6 p-6 sm:flex-row sm:justify-between sm:items-start sm:p-10">
       <div className="flex flex-col gap-2 max-w-xl">
         <p className="text-bold">
@@ -14,6 +18,14 @@ export default function CreateAirplaneForm() {
         <Button variant="outline" className='text-blue-900 font-bold text-base sm:text-2xl px-6 py-4 sm:p-10 hover:bg-blue-900 hover:text-white'>Cancel</Button>
         <Button variant="outline" className='bg-blue-900 font-bold text-base sm:text-2xl px-6 py-4 sm:p-10 text-white hover:bg-white hover:text-blue-900'>INITILIAZE UNIT</Button>
       </div>
+    </div>
+     <AirCraftIdentity/>
+     <div className="flex">
+        <div><SeatCapacity/></div>
+        <div><PerformanceSection/></div>
+     </div>
+     <div><LogisticsStatusSection/></div>
+     
     </div>
   );
 }
