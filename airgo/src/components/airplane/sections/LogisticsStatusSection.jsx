@@ -33,20 +33,20 @@ export default function LogisticsStatusSection() {
         <div className="w-full">
           <CardContent className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
             <Field>
-                <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
+                <FieldLabel htmlFor="max-speed" className='text-xl font-semibold text-[#44474D]'>OPERATIONAL STATUS</FieldLabel>
               <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-              <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
-              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
+              <FieldLabel htmlFor="max-speed" className='text-xl font-semibold text-[#44474D]'>AIRLINE IDENTIFIER (UUID)</FieldLabel>
+              <Input placeholder="AC-FLEET-992084-B" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-                <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
-              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
+                <FieldLabel htmlFor="max-speed" className='text-xl font-semibold text-[#44474D]'>MANUFACTURER YEAR</FieldLabel>
+              <Input placeholder="2024" required className="w-full text-xl font-medium p-2" />
             </Field>
             <Field>
-           <FieldLabel htmlFor="max-speed" className='text-xl font-medium'>MAX SPEED (KNOTS)</FieldLabel>
-              <Input placeholder="520" required className="w-full text-xl font-medium p-2" />
+           <FieldLabel htmlFor="max-speed" className='text-xl font-semibold text-[#44474D]'>LAST MANTANANCE DATE</FieldLabel>
+              <Input placeholder="dd-mm-yyyy" required className="w-full text-xl font-medium p-2" />
             </Field>
           </CardContent>
         </div>
